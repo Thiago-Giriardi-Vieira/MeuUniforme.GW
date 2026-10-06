@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MeuUniforme/MeuUniforme.iml" filepath="$PROJECT_DIR$/MeuUniforme/MeuUniforme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MeuUniforme.GW-main.iml" filepath="$PROJECT_DIR$/.idea/MeuUniforme.GW-main.iml" />
+    </modules>
+  </component>
+</project>
