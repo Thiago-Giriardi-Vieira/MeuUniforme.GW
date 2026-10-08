@@ -5,7 +5,7 @@ import java.sql.SQLException;
 public class ConnectionFactory {
     public Connection getConnection() {
         try {
-            // Caminho corrigido para a base de dados do sistema de uniformes
+            // O caminho deve ir direto da porta (3306) para o nome da base de dados (meuuniformegw)
             String url = "jdbc:mysql://localhost:3306/meuuniformegw";
             String usuario = "root";
             String senha = "104980thi";
