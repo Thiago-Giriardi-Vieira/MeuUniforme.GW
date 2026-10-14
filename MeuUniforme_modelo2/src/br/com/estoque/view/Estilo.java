@@ -169,7 +169,7 @@ public final class Estilo {
 
     /** Mostra um erro: validações como aviso; falhas técnicas com o detalhe. */
     public static void erro(Component pai, RuntimeException e) {
-        if (e instanceof IllegalArgumentException) {
+        if (e instanceof IllegalArgumentException || e instanceof IllegalStateException) {
             JOptionPane.showMessageDialog(pai, e.getMessage(), "Verifique os dados", JOptionPane.WARNING_MESSAGE);
             return;
         }

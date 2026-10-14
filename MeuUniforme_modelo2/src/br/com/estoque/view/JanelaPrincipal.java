@@ -13,6 +13,7 @@ public class JanelaPrincipal extends JFrame implements Navegacao {
     private static final String ESTOQUE = "estoque";
     private static final String FORM_UNIFORME = "formUniforme";
     private static final String TURMAS = "turmas";
+    private static final String ENTREGA = "entrega";
 
     private final CardLayout cartas = new CardLayout();
     private final JPanel raiz = new JPanel(cartas);
@@ -20,6 +21,7 @@ public class JanelaPrincipal extends JFrame implements Navegacao {
     private final EstoquePainel estoque;
     private final UniformeFormPainel formUniforme;
     private final TurmasAlunosPainel turmas;
+    private final EntregaPainel entrega;
 
     public JanelaPrincipal(Usuario usuario) {
         super("MeuUniforme.GW - Escola Municipal Prefeito Geraldo Wetzel");
@@ -28,11 +30,13 @@ public class JanelaPrincipal extends JFrame implements Navegacao {
         estoque = new EstoquePainel(this);
         formUniforme = new UniformeFormPainel(this);
         turmas = new TurmasAlunosPainel(this);
+        entrega = new EntregaPainel(this, usuario);
 
         raiz.add(new MenuPainel(this, usuario), MENU);
         raiz.add(estoque, ESTOQUE);
         raiz.add(formUniforme, FORM_UNIFORME);
         raiz.add(turmas, TURMAS);
+        raiz.add(entrega, ENTREGA);
         add(raiz);
 
         setSize(1000, 640);
@@ -62,6 +66,12 @@ public class JanelaPrincipal extends JFrame implements Navegacao {
     public void irParaTurmas(boolean abaAlunos) {
         turmas.aoExibir(abaAlunos);
         cartas.show(raiz, TURMAS);
+    }
+
+    @Override
+    public void irParaEntrega() {
+        entrega.aoExibir();
+        cartas.show(raiz, ENTREGA);
     }
 
     @Override

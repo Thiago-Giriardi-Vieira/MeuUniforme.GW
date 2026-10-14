@@ -6,6 +6,11 @@ import br.com.estoque.util.SenhaUtil;
 
 import java.time.LocalDateTime;
 
+/**
+ * Teste rápido de ponta a ponta do banco, sem telas. Pode ser executado várias vezes
+ * (os campos únicos recebem um sufixo para não repetir).
+ * Para abrir o sistema de verdade, execute br.com.estoque.view.LoginTela.
+ */
 public class Principal {
     public static void main(String[] args) {
         String sufixo = String.valueOf(System.currentTimeMillis() % 100000);

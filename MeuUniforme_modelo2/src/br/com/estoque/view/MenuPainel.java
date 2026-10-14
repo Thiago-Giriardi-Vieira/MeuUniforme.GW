@@ -34,7 +34,7 @@ public class MenuPainel extends JPanel {
         JPanel botoes = new JPanel(new GridBagLayout());
         botoes.setOpaque(false);
         GridBagConstraints g = new GridBagConstraints();
-        g.insets = new Insets(0, 14, 40, 14);
+        g.insets = new Insets(0, 14, 24, 14);
         g.gridy = 0;
         g.gridx = 0;
         botoes.add(botaoMenu("Uniformes em<br>estoque", nav::irParaEstoque), g);
@@ -42,6 +42,15 @@ public class MenuPainel extends JPanel {
         botoes.add(botaoMenu("Alunos<br>cadastrados", () -> nav.irParaTurmas(true)), g);
         g.gridx = 2;
         botoes.add(botaoMenu("Turmas<br>cadastradas", () -> nav.irParaTurmas(false)), g);
+
+        // segunda linha: ação principal do dia a dia, em um botão largo
+        g.gridx = 0;
+        g.gridy = 1;
+        g.gridwidth = 3;
+        g.insets = new Insets(0, 14, 0, 14);
+        JButton entrega = botaoMenu("Entregar uniformes", nav::irParaEntrega);
+        entrega.setPreferredSize(new Dimension(686, 80));
+        botoes.add(entrega, g);
 
         JPanel cartao = new JPanel(new BorderLayout());
         cartao.setBackground(Estilo.FUNDO);
