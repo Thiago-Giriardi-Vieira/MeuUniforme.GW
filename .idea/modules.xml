@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MeuUniforme/MeuUniforme.iml" filepath="$PROJECT_DIR$/MeuUniforme/MeuUniforme.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/MeuUniforme.GW-main.iml" filepath="$PROJECT_DIR$/.idea/MeuUniforme.GW-main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/QueryDoBanco/QueryDoBanco.iml" filepath="$PROJECT_DIR$/QueryDoBanco/QueryDoBanco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MeuUniforme_modelo2.iml" filepath="$PROJECT_DIR$/MeuUniforme_modelo2.iml" />
     </modules>
   </component>
 </project>
