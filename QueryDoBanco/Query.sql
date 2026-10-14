@@ -1,1 +1,0 @@
-INSERT INTO fornecedor (nome_fantasia, cnpj, telefone) VALUES ('Confecções Joinville', '11.111.111/0001-11', '9999-9999');
