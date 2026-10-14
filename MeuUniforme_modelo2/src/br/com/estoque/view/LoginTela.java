@@ -5,6 +5,11 @@ import br.com.estoque.model.Usuario;
 
 import javax.swing.*;
 import java.awt.*;
+
+/**
+ * Porta de entrada do sistema. Alterna entre "Login" e "Cadastro de usuário"
+ * e, após o login, abre a janela principal.
+ */
 public class LoginTela extends JFrame {
 
     private static final String LOGIN = "login";

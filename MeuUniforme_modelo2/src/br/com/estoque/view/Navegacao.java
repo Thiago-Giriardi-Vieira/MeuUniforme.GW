@@ -10,5 +10,6 @@ public interface Navegacao {
     void irParaFormUniforme(Produto produto);
     /** @param abaAlunos true abre direto na aba "Alunos"; false, na aba "Turmas" */
     void irParaTurmas(boolean abaAlunos);
+    void irParaEntrega();
     void sair();
 }
